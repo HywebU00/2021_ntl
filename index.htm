@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="zh-Hant" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>國立臺灣圖書館</title>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- hyUI -->
+    <link rel="stylesheet" href="en/css/hyui.css">
+    <!-- favicon -->
+    <link href="en/images/favicon.png" rel="icon" type="image/x-icon">
+    <style>
+        .demo_wrap {
+            max-width: 1000px;
+            margin: 0em auto 1em;
+            padding: 3em 15px 3em;
+            clear: both;
+            background: #FFF
+        }
+        .demo_wrap h1 {
+            display: inline-block;
+            margin: 0px auto;
+            width: 260px;
+            margin-right: 1em 
+        }
+        b{
+            background: deeppink;
+            color: #fff;
+            padding: .25em .5em;
+        }
+        @media screen and (max-width:545px) {
+            .demo_wrap h1 {
+                max-width: 100%;
+                float: none;
+                text-align: center
+            }
+        }
+
+        .demo_wrap h1 img { width: auto; }
+        .num { width: 12% }
+
+        body { counter-reset: num }
+        table {
+            margin-bottom: 1em;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table th, table td{
+            padding: .5em;
+            text-align: left;
+        }
+
+        table td{ border: #ddd 1px solid; word-break: break-all; }
+        table td a{ word-break: break-all; }
+        table th{
+            background-color: #F3F3F3;
+            color: #333;
+            border: #DDD 1px solid;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        table caption {
+            text-align: left;
+            font-weight: bold;
+            font-size: 1.25em;
+            padding: .5em 0;
+            color: #ff5050
+        }
+        tbody tr td:first-child:before {
+            counter-increment: num;
+            display: block;
+            text-align: center;
+            content: counters(num, ".") " "
+        }
+        tbody tr td:nth-child(2) { width: 35% }
+        tbody tr td span{ color: deeppink; }
+        tbody tr td b{
+            background: deeppink;
+            color: #fff;
+            padding: .25em .75em;
+            margin-left: .5em;
+            border-radius: 4px;
+        }
+        tbody tr td b.back{ background: #2da53b; }
+        .btn_grp{ text-align: right; }
+
+        @media screen and (max-width:545px) {
+           .btn_grp{ text-align: center; } 
+        }
+    </style>
+</head>
+<body>
+    <div class="demo_wrap">
+        <h1><img src="en/images/logo.svg" alt=""></h1>
+        <!-- <div class="btn_grp">
+            <a href="#" class="btn">切版檔案請按此下載</a>
+        </div> -->
+        <div class="table_wrapper">
+            <h3>共用模組</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="num">編號</th>
+                        <th>頁面名稱</th>
+                        <th>檔案名稱</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>form 表單</td>
+                        <td><a href="en/form.htm" target="_blank"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>btn 按鈕</td>
+                        <td><a href="en/btn.htm" target="_blank"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Google search result</td>
+                        <td><a href="en/gs.htm" target="_blank"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>404</td>
+                        <td><a href="en/404.htm" target="_blank"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>sitemap</td>
+                        <td><a href="en/sitemap.htm" target="_blank"></a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--  -->
+            <h3>英文版</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="num">編號</th>
+                        <th>頁面名稱</th>
+                        <th>檔案名稱</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>首頁</td>
+                        <td><a href="en/mp.htm" target="_blank"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>NP</td>
+                        <td><a href="en/np.htm" target="_blank"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>LP</td>
+                        <td><a href="en/lp.htm" target="_blank"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>CP</td>
+                        <td>
+                            內容頁&nbsp;&nbsp;&nbsp;<a href="en/cp.htm" target="_blank"></a><br>
+                            意見回饋&nbsp;&nbsp;&nbsp;<a href="en/form-1.htm" target="_blank"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>表單</td>
+                        <td>
+                            民意信箱&nbsp;&nbsp;&nbsp;<b>待確認</b><br>
+                            填寫內容頁&nbsp;&nbsp;&nbsp;<a href="en/form-3.htm" target="_blank"></a><br>
+                            案件查詢&nbsp;&nbsp;&nbsp;<a href="en/form-4.htm" target="_blank"></a><br>
+                            案件查詢出頁&nbsp;&nbsp;&nbsp;<a href="en/form-5.htm" target="_blank"></a><br>
+                            瀏覽人次&nbsp;&nbsp;&nbsp;<a href="en/table-1.htm" target="_blank"></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>日文版</h3>
+        </div>
+    </div>
+    <!-- <a href="javascript:;" class="scrollToTop" >回頁首</a> -->
+    <script src="en/js/jquery-3.3.1.min.js"></script>
+    <script src="en/vendor/jquery.easing.min.js"></script>
+    <script src="en/js/hyui.js"></script>
+    <script src="en/js/customize.js"></script>
+    <script>
+    $(function() {
+        $('tbody').find('a').each(function(index, el) {
+            var Link = $(this).attr('href');
+            $(this).text(Link);
+        });
+    })
+    </script>
+</body>
+
+</html>

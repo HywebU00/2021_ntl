@@ -1,0 +1,132 @@
+footer {
+    box-sizing: border-box;
+    @include clearfix;
+    text-align: left;
+    font-size: 0.813em;
+    padding: 1em 0;
+    background: $primaryColor;
+    color: #fff;
+
+    .container {
+        @include gutter;
+        >div { padding-bottom: 1em; }
+        display: flex;
+
+        @include screen('tablet') {
+            flex-wrap:wrap;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: $primaryColor;
+
+        &:hover, &:focus {
+            color: darken($primaryColor, 10);
+        }
+    }
+    .footer_info {
+        flex:1 1 auto;
+        flex-basis: calc(100% - 200px);
+        p{ margin: 0; }
+    }
+    .footer_icon {
+        flex:0 1 200px;
+
+        @include screen('tablet') {
+            flex:1 1 100%;
+            text-align: right;
+        }
+        @include screen('mobile') {
+            text-align: center;
+        }
+    }
+    // 版權連結
+    .footer_link {
+        @include li-reset();
+        padding-bottom: 10px;
+        @include clearfix();
+        display: flex;
+
+        @include screen('mobile') {
+            flex-direction: column;
+        }
+
+        li {
+            flex:0 1 auto;
+            margin: 0 8px 0 0;
+            @include screen('mobile') {
+                flex:1 1 100%; 
+            }
+            a {
+                display: block;
+                padding: .5em 1em .5em 3em;
+                // background: $primaryColor;
+                color: #FFF;
+                border-radius:4px;
+                text-align: center;
+                transition: all .3s ease-out;
+
+                position: relative;
+                &:before{
+                    content: '';
+                    position: absolute;
+                    width: 20px;
+                    height: 1px;
+                    background: #fff;
+                    left: 0;
+                    top: 50%;
+
+                    transition: all .3s ease-out;
+                }
+
+                &:hover, &:focus {
+                    background: darken($primaryColor, 10);
+
+                    &:before{
+                        left: 12px;
+                    }
+                }
+
+                
+            }
+        }
+    }
+    p { line-height: 1.65em; }
+    .update,
+    .counter {
+        display: inline-block;
+        box-sizing:border-box;
+        padding: 0 0 0 .75em;
+        color: #000;
+        background: #c4d8e3;
+        em {
+            display: inline-block;
+            background: #fff;
+            font-style: normal;
+            // color: $primaryColor;
+            padding: 0 .5em;
+        }
+    }
+    .footer_icon {
+        a {
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 3px;
+
+            position:relative;
+            &:focus {
+                &:after {
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    box-shadow: 0px 0px 0px 1px $aHover inset;
+                    z-index: 99;
+                }
+            }
+        }
+        img { max-width: 120px; }
+    }
+}
