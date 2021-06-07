@@ -36,7 +36,6 @@ a.goCenter {
     opacity: 0;
     transition: .5s;
     border-radius: 0px 0px 4px 4px;
-    color: #FFF;
     @include screen("mobile") {
         display: none;
     }
@@ -44,6 +43,7 @@ a.goCenter {
         outline: none;
         top: 0;
         opacity: 1;
+        color: #fff;
     }
 }
 // no-js

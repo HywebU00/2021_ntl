@@ -1161,6 +1161,7 @@ select::-ms-expand {
 .form_inline {
     display: flex;
     flex-wrap: wrap;
+    // justify-content: center;
     align-items: center;
 
     label {

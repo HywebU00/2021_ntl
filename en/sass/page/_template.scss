@@ -246,8 +246,8 @@ body {
 .Feedback{
     padding:20px;
     border-radius: 5px;
-    border: 1px solid #d3c1aa;
-    background: #fff2e2;
+    border: 1px solid #1c3882;
+    background: #fff;
     width:550px;
     margin: 20px 0;
 
@@ -325,7 +325,6 @@ body {
         &.td-total{ background: #f7f7f7; }
     }
 }
-
 .aws_border{
     margin:0 auto 10px auto;
 
@@ -336,7 +335,6 @@ body {
         min-width: 50px;
     }
 }
-
 .aws_border2{
     margin:50px auto 15px auto;
 
@@ -349,6 +347,70 @@ body {
 }
 .currentday {font-weight:bold;}
 
+// 案件查詢
+.enquiry{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    // padding: .5em 15px;
+    padding: .5em 0;
+    p{
+        margin: 0;
+        color: #d90000;
+        font-size: 1.25em;
+        border-left: 6px solid #d90000;
+        padding-left: .75em;
+    }
+    button{}
+
+    @media screen and (max-width: 1200px){
+        @include gutter(15px);
+    }
+    @include screen('tablet') {
+        flex-flow: row wrap;
+        button{ margin-top: 10px;}
+    }
+}
+// 列表頁
+.list {
+    &>ul, ol {
+        &>li {
+            &>a {
+                padding: 0 1em !important;
+            }
+        }
+        time {
+            display: inline-block !important;
+            padding-right: 1em;
+            vertical-align: top;
+            // color: #AAA;
+
+            +.text{
+                display: inline-block;
+                max-width: calc(100% - 110px);
+            }
+        }
+    }
+}
+.HOT{
+    display: inline-block;
+    background:#b72c00;
+    color: #fff;
+    font-size: 0.6em;
+    padding: 2px 8px;
+    margin: 0 10px;
+    border-radius: 20px;
+    &:before{
+        content: '';
+        display: inline-block;
+        margin-right: 4px;
+        width: 12px;
+        height: 12px;
+        background: url(../images/icon/icon_star2.svg) 50% 50% no-repeat;
+        background-size: contain;
+    }
+}
 
 ////////////////////////////////////////////////////////////
 // 為了與首頁區隔，請在內頁加上innerpage ClassName
