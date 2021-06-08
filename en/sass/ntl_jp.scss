@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@import "_variable";							//變數
+@import "_variable-jp";							//變數
 
 // 共通 common
 @import "sass/common/_mixin";					//客製MIXIN
@@ -54,6 +54,7 @@
 @import "page/_cp";								//CP
 @import "page/_sitemap";						//Sitemap
 // @import "page/_left_block";						//左欄left_block
+@import "page/_jp";								//日文版，其餘與英文版共用
 
 @import "sass/common/_print";					//列印樣式
 

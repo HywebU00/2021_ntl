@@ -78,6 +78,11 @@
                 text-decoration: none;
                 color: #222;
                 font-size: .875em;
+
+                &:hover, &:focus{
+                    color: $aHover;
+                    cursor: pointer;
+                }
             }
         }
     }

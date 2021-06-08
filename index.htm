@@ -29,9 +29,21 @@
             margin-right: 1em 
         }
         b{
-            background: deeppink;
+            background: #3f51b5;
             color: #fff;
-            padding: .25em .5em;
+            padding: .5em 1em .5em 2.2em;
+            margin-left: -1em;
+        }
+        .note{
+            padding: .75em 1em;
+            background: #f5f5f5;
+            margin: 20px 0;
+        }
+        .note li b{
+            background: none;
+            color: #ff5050;
+            padding: 0;
+            margin-left: 0;
         }
         @media screen and (max-width:545px) {
             .demo_wrap h1 {
@@ -71,7 +83,7 @@
             font-weight: bold;
             font-size: 1.25em;
             padding: .5em 0;
-            color: #ff5050
+            color: #ff5050;
         }
         tbody tr td:first-child:before {
             counter-increment: num;
@@ -80,9 +92,9 @@
             content: counters(num, ".") " "
         }
         tbody tr td:nth-child(2) { width: 35% }
-        tbody tr td span{ color: deeppink; }
+        tbody tr td span{ color: #3f51b5; }
         tbody tr td b{
-            background: deeppink;
+            background: #3f51b5;
             color: #fff;
             padding: .25em .75em;
             margin-left: .5em;
@@ -102,6 +114,24 @@
         <!-- <div class="btn_grp">
             <a href="#" class="btn">切版檔案請按此下載</a>
         </div> -->
+        <!--  -->
+        <section class="note">
+            <div>
+                <b>英文版</b><br>
+                <ol>
+                    <li>CSS：css/<b>ntl_en</b>.css</li>
+                    <li>主背景：images/<b>bg-en</b>.jpg</li>
+                </ol>
+            </div>
+            <div>
+                <b>日文版</b><br>
+                <ol>
+                    <li>CSS：css/<b>ntl_jp</b>.css</li>
+                    <li>主背景：images/<b>bg-jp</b>.jpg</li>
+                </ol>
+            </div>
+        </section>
+        <!--  -->
         <div class="table_wrapper">
             <h3>共用模組</h3>
             <table>
@@ -131,7 +161,10 @@
                     <tr>
                         <td></td>
                         <td>404</td>
-                        <td><a href="en/404.htm" target="_blank"></a></td>
+                        <td>
+                            英文&nbsp;&nbsp;<a href="en/404.htm" target="_blank"></a><br>
+                            日文&nbsp;&nbsp;<a href="en/404-jp.htm" target="_blank"></a>
+                        </td>
                     </tr>
                     <tr>
                         <td></td>
@@ -140,7 +173,6 @@
                     </tr>
                 </tbody>
             </table>
-            <!--  -->
             <h3>英文版</h3>
             <table>
                 <thead>
@@ -188,6 +220,22 @@
                 </tbody>
             </table>
             <h3>日文版</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="num">編號</th>
+                        <th>頁面名稱</th>
+                        <th>檔案名稱</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>首頁</td>
+                        <td><a href="en/mp-jp.htm" target="_blank"></a></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
     <!-- <a href="javascript:;" class="scrollToTop" >回頁首</a> -->

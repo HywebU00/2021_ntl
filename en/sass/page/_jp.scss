@@ -1,0 +1,55 @@
+// 最外圍預設為100%
+.wrapper {
+    background: url(../images/bg-jp.jpg) 50% top no-repeat;
+}
+
+a.more{ width: 12em;}
+
+// 快速連結
+.quick-link{
+    .container{
+        a{
+            background: -webkit-linear-gradient(180deg, $primaryColor, rgb(2, 115, 118));
+            background: linear-gradient(180deg, $primaryColor, rgb(2, 115, 118));
+        }
+    }
+}
+
+
+// btn
+.btn-search,
+.btn-AdvanSearch {
+    background: -webkit-linear-gradient(0deg, $primaryColor, rgb(1, 116, 118));
+    background: linear-gradient(0deg, $primaryColor, rgb(1, 116, 118));
+
+    transition: all .3s ease;
+
+    &:hover,
+    &:focus {
+        // color: #fff;
+        background: $primaryColor;
+    }
+}
+
+// fatfooter
+.fatfooter {
+    .container {
+        background: -webkit-linear-gradient(0deg, $primaryColor, rgb(1, 116, 118));
+        background: linear-gradient(0deg, $primaryColor, rgb(1, 116, 118));
+    }
+    // 按鈕
+    .btn-fatfooter {
+        background: #222;
+        &:hover,
+        &:focus {
+            background: $primaryColor;
+        }
+    }
+    nav {
+        ul {
+            li{
+                flex:1 1 auto;
+            }
+        }
+    }
+}
