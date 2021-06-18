@@ -95,6 +95,7 @@ select::-ms-expand {
         padding: .3em 15px;
         font-weight: bold;
         color: #0a505e;
+        line-height: 1.2;
         //white-space: nowrap;
 
         @include screen('mobile') {

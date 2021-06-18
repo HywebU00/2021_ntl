@@ -246,9 +246,11 @@ body {
 .Feedback{
     padding:20px;
     border-radius: 5px;
-    border: 1px solid #1c3882;
-    background: #fff;
-    width:550px;
+    // border: 1px solid #1c3882;
+    // background: #fff;
+    border: 1px solid #bcbcbc;
+    background: #f3f3f3;
+    // width:550px;
     margin: 20px 0;
 
     legend{
@@ -262,6 +264,22 @@ body {
 
 // 
 .explan{
+    margin-top: 1em !important;
+    b{ color: #c52a3e; }
+}
+
+// 申請說明
+.text-info{
+    background: #f2f2f2;
+    padding: 1em 1.5em;
+    margin: 20px 0 0;
+    a{
+        text-decoration: underline !important;
+        padding: 0 2px;
+        &:hover, &:focus{
+            text-decoration: none !important;
+        }
+    }
     b{ color: #c52a3e; }
 }
 
@@ -409,6 +427,115 @@ body {
         height: 12px;
         background: url(../images/icon/icon_star2.svg) 50% 50% no-repeat;
         background-size: contain;
+    }
+}
+
+// 主題書展 - 列表頁
+.list_cards{
+    .col{
+        box-shadow: inset 0 0 1px 0 rgba(0,0,0,0);
+
+        .img-container{
+            // @include aspect-ratio(4,3);
+            background: none;
+        }
+        .info{
+            color: #222;
+            h3{
+                margin: 6px 0 14px;
+                color: #000;
+
+                position: relative;
+                &:after{
+                    content: '';
+                    position: absolute;
+                    width: 0%;
+                    height: 2px;
+                    background: $form-focus;
+                    left: 0;
+                    bottom: -6px;
+                    transition: all .6s ease;
+                }
+            }
+            p{
+                margin: 0;
+                line-height: 1.2;
+                margin-bottom: 4px;
+                span{
+                    display: inline-block;
+                    font-weight: bold;
+                    padding: 2px 4px;
+                    margin-right: 4px;
+                    font-size: .813em;
+                    color: #838383;
+                    box-shadow: inset 0 0 2px 0 #222;
+                    // background: #e8e8e8;
+                    // &:after{
+                    //     content: '';
+                    // }
+                }
+            }
+        }
+
+        a{
+            transition: all .3s ease;
+            padding: 1em;
+            &:hover, &:focus{
+                box-shadow: inset 0 0 1px 0 rgba(0,0,0,1);
+                .info{
+                    h3{
+                        color: $form-focus;
+                        &:after{ width: 100%; }
+                    }
+                }
+            }
+        }
+    }
+}
+// 主題書展 - 內容頁
+.list_card{
+    .col{
+        .img-container{
+            // @include aspect-ratio(4,3);
+            background: none;
+        }
+        .info{
+            color: #222;
+            h3{
+                margin: 14px 0;
+                color: #000;
+
+                position: relative;
+                &:after{
+                    content: '';
+                    position: absolute;
+                    width: 0%;
+                    height: 2px;
+                    background: $form-focus;
+                    left: 0;
+                    bottom: -6px;
+                    transition: all .6s ease;
+                }
+            }
+            p{
+                margin: 0;
+                line-height: 1.2;
+                margin-bottom: 4px;
+                span{
+                    display: inline-block;
+                    font-weight: bold;
+                    padding: 2px 4px;
+                    margin-right: 4px;
+                    font-size: .813em;
+                    color: #838383;
+                    box-shadow: inset 0 0 2px 0 #222;
+                    // background: #e8e8e8;
+                    // &:after{
+                    //     content: '';
+                    // }
+                }
+            }
+        }
     }
 }
 

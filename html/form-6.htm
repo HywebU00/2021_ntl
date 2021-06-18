@@ -150,7 +150,7 @@
                     <!-- 欄位化 -->
                     <div class="fielded">
                         <!-- h2節點 -->
-                        <h2 class="title">Contact Us</h2>
+                        <h2 class="title">Library Visit Request Form</h2>
                         <!-- function功能區塊 -->
                         <div class="function">
                             <ul>
@@ -160,13 +160,13 @@
                             </ul>
                         </div>
                     </div>
+                    <!-- 案件查詢 -->
+                    <!-- <div class="enquiry">
+                        <p>Comments from non-readers will not be accepted</p>
+                        <button class="btn btn-secondary">Case Enquiry</button>
+                    </div> -->
                     <!-- CP Start -->
                     <section class="cp inner-main">
-                        <!-- 案件查詢 -->
-                        <div class="enquiry">
-                            <p>Comments from non-readers will not be accepted</p>
-                            <button class="btn btn-secondary">Case Enquiry</button>
-                        </div>
                         <div class="text-info">
                             <p>親愛的讀者 您好:<br>
                                 歡迎您使用民意信箱，為維護陳情人權益，避免浪費行政資源，請務必詳閱以下說明並確認同意，再行撰寫：
@@ -183,11 +183,118 @@
                                 </li>
                             </ol>
                         </div>
-                        <!-- 按鈕 -->
-                        <div class="btn_grp form_inline">
-                            <button class="btn btn-normal">不同意</button>
-                            <button class="btn btn-primary">同意</button>
-                        </div>
+                        <!-- 表單 -->
+                        <p class="explan">
+                            This symbol<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>is a required field
+                        </p>
+                        <form action="">
+                            <div class="flex-form form_grid">
+                                <div class="form_grp">
+                                    <label for="" class="form_title">Date of visit (Required)<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr></label>
+                                    <div class="form_content">
+                                        <input name="text" id="" type="date" placeholder="Type in Your Point">
+                                    </div>
+                                </div>
+                                <div class="form_grp">
+                                    <label for="" class="form_title">Visiting Time (Required)<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr></label>
+                                    <div class="form_content">
+                                        <input name="text" id="" type="text" placeholder="Type in Your Visiting Time">
+                                    </div>
+                                </div>
+                                <div class="form_grp">
+                                    <label for="" class="form_title">Application Unit (Required)<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr></label>
+                                    <div class="form_content">
+                                        <input name="text" id="" type="text" placeholder="Type in Your Application Unit ">
+                                    </div>
+                                </div>
+                                <div class="form_grp">
+                                    <label for="" class="form_title">Number of people (Required)<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr></label>
+                                    <div class="form_content">
+                                        <input name="text" id="" type="text" placeholder="Type in Your Number of people">
+                                    </div>
+                                </div>
+                                <div class="form_grp">
+                                    <label for="" class="form_title">Visitor Status</label>
+                                    <div class="form_content">
+                                        <input name="text" id="" type="text" placeholder="Type in Your Visitor Status">
+                                    </div>
+                                </div>
+                                <div class="form_grp">
+                                    <label for="" class="form_title">Contact Us (Required)<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr></label>
+                                    <div class="form_content">
+                                        <input name="text" id="" type="text" placeholder="Type in Your Contact Us">
+                                    </div>
+                                </div>
+                                <div class="form_grp">
+                                    <label for="" class="form_title">Telephone (Required)<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr></label>
+                                    <div class="form_content">
+                                        <input name="text" id="" type="text" placeholder="Type in Your Telephone">
+                                    </div>
+                                </div>
+                                <div class="form_grp">
+                                    <label for="" class="form_title">Phone (Required)<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr></label>
+                                    <div class="form_content">
+                                        <input name="text" id="" type="text" placeholder="Type in Your Phone">
+                                    </div>
+                                </div>
+                                <div class="form_grp">
+                                    <label for="" class="form_title">e-mail (Required)<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr></label>
+                                    <div class="form_content">
+                                        <input name="text" id="" type="text" placeholder="Type in Your e-mail">
+                                    </div>
+                                </div>
+                                <div class="form_grp" role="group" aria-labelledby="fake-legend">
+                                    <label class="form_title">National Elementary and Junior High School(Grades 1-4)(Possible multiple choice)</label>
+                                    <div class="form_content" id="fake-legend">
+                                        <div class="check_grp">
+                                            <label><input type="checkbox" name="" value="" checked="">1-4F, tour of all floors (approx. 1 hour)</label>
+                                            <label><input type="checkbox" name="" value="">Parent-Child Information Center, 1st floor (about 30 minutes)</label>
+                                            <label><input type="checkbox" name="" value="">Double Harmony Gallery, 4th floor (about 30 minutes)</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_grp" role="group" aria-labelledby="fake-legend">
+                                    <label class="form_title">Upper Elementary School(5th and 6th grade) National High School, the Colleges and Universities Research institutions and other organizations and members of the community</label>
+                                    <div class="form_content" id="fake-legend">
+                                        <div class="check_grp">
+                                            <label><input type="checkbox" name="" value="" checked="">1-4F, tour of all floors (approx. 1 hour)</label>
+                                            <label><input type="checkbox" name="" value="">1-6 floors, tour of all floors (approx. 1 hour)</label>
+                                            <label><input type="checkbox" name="" value="">Parent-Child Information Center, 1st floor (about 30 minutes)</label>
+                                            <label><input type="checkbox" name="" value="">1st Floor Information Center for the Visually Impaired (approx. 30 minutes)</label>
+                                            <label><input type="checkbox" name="" value="">Double Harmony Gallery, 4th floor (about 30 minutes)</label>
+                                            <label><input type="checkbox" name="" value="">5-6F Taiwan Studies Research Center (about 30 minutes)</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_grp" role="group" aria-labelledby="fake-legend">
+                                    <label class="form_title">National High School, colleges and universities Research institutions and other organizations and members of the public (Multiple choice)</label>
+                                    <div class="form_content" id="fake-legend">
+                                        <div class="check_grp">
+                                            <label><input type="checkbox" name="" value="" checked="">5F Taiwan Library Hospital (approx. 30 minutes) Guided tours are only available on Wednesdays from 14:00 to 17:00.</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_grp">
+                                    <div class="form_title">Note</div>
+                                    <div class="form_content">
+                                        <textarea name="" id="" cols="30" rows="10" placeholder="Type in Your Note"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form_grp">
+                                    <div class="form_title">驗證碼<abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr></div>
+                                    <div class="form_content form_inline">
+                                        <img src="images/basic/captcha.gif" alt="" class="captcha">
+                                        <input name="" type="text" value="">
+                                        <button class="btn"><i class="i_reflash"></i>重新整理</button>
+                                        <button class="btn"><i class="i_play"></i>語音播放</button>
+                                    </div>
+                                </div>
+                                <div class="btn_grp form_inline">
+                                    <button class="btn btn-reset">清除</button>
+                                    <button class="btn btn-submit">送出</button>
+                                </div>
+                            </div>
+                        </form>
                     </section>
                     <!-- CP End -->
                 </div>
