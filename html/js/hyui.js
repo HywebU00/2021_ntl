@@ -641,12 +641,22 @@ $(function() {
     $('.function_panel .share').find('li:last>a').focusout(function(event) {
         $(this).parent().parent('ul').hide();
     });
+    // 新增
+    $('.function .icon_share').find('li:last>a').focusout(function(event) {
+        $(this).parent().parent('ul').hide();
+    });
+
     // 點外面關閉share
     $(document).on('touchend click', function(e) {
-        var container = $(".function_panel .share");
+        var container = $(".function_panel .share"),
+            container2 = $(".function .icon_share");
+
         if (!container.is(e.target) && container.has(e.target).length === 0) {
             $('.function_panel .share ul').hide();
-        }
+        };
+        if (!container2.is(e.target) && container2.has(e.target).length === 0) {
+            $('.function .icon_share ul').hide();
+        };
     });
     /*------------------------------------*/
     /////////////字型大小 font-size//////////
