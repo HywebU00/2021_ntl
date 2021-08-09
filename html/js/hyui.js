@@ -28,7 +28,7 @@ $(function() {
     if (_navLength > 1) {
         $('.navigation ul:nth-child(1)').addClass('left_nav');
     }
-    // $('.navigation').has('.language').addClass('have_language');
+    $('.navigation').has('.language').addClass('have_language');
     /*-----------------------------------*/
     /////// header選單 tab及 fix設定////////
     /*-----------------------------------*/
@@ -797,24 +797,24 @@ $(function() {
     /*-----------------------------------*/
     //////// 語言模組 無障礙遊走設定  ////////
     /*-----------------------------------*/
-    // $('.language').find('ul').hide();
-    // var openLang = $('.language').children('a');
-    // openLang.off().click(function(e) {
-    //     $(this).next('ul').stop(true, true).slideToggle();
-    //     e.preventDefault();
-    // });
-    // openLang.keyup(function() {
-    //     $(this).next('ul').stop(true, true).slideDown();
-    // });
-    // $('.language').find('ul li:last>a').focusout(function() {
-    //     $('.language').find('ul').hide();
-    // });
-    // $(document).on('touchend click', function(e) {
-    //     var target = e.target;
-    //     if (!$(target).is('.language a')) {
-    //         $('.language').find('ul').hide();
-    //     }
-    // });
+    $('.language').find('ul').hide();
+    var openLang = $('.language').children('a');
+    openLang.off().click(function(e) {
+        $(this).next('ul').stop(true, true).slideToggle();
+        e.preventDefault();
+    });
+    openLang.keyup(function() {
+        $(this).next('ul').stop(true, true).slideDown();
+    });
+    $('.language').find('ul li:last>a').focusout(function() {
+        $('.language').find('ul').hide();
+    });
+    $(document).on('touchend click', function(e) {
+        var target = e.target;
+        if (!$(target).is('.language a')) {
+            $('.language').find('ul').hide();
+        }
+    });
 
     // /*------------------------------------*/
     // ///////table 加上響應式table wrapper/////

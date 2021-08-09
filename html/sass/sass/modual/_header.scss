@@ -129,9 +129,9 @@
         @include screen('mobile') {
             display: none;
         }
-        // &.have_language {
-        //     padding-right: 160px;
-        // }
+        &.have_language {
+            padding-right: 160px;
+        }
         @extend %clearfix;
         overflow: hidden;
         // width: 100%;
@@ -186,12 +186,12 @@
             }
         }
 
-        // .language {
-        //     position: absolute;
-        //     right: 15px;
-        //     top: .35em;
-        //     font-size: .75em;
-        // }
+        .language {
+            position: absolute;
+            right: 15px;
+            top: .35em;
+            font-size: .75em;
+        }
     }
 }
 //search
