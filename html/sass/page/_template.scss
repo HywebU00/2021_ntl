@@ -167,20 +167,21 @@ body {
         .news{
             li a{
                 position: relative;
-                padding-right: 100px;
+                padding-left: 100px;
                 transition: all .3s ease;
                 @include text-overflow; 
                 time{
                     position: absolute;
-                    right: 0;
+                    left: 0;
                     transition: all .3s ease;
                 }
 
                 &:hover, &:focus{
                     padding-right: 0;
                     padding-left: 1em;
+                    color: $linkColor;
                     time{
-                        right: -90px;
+                        left: -90px;
                     }
                 }
             }
